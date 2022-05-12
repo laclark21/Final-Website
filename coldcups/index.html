@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+  Cold Cups
+  </title>
+<style>
+ @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+ @import url('https://use.typekit.net/qwf3kld.css');
+
+
+
+ .container {
+   width: 1570px;
+   height: 1000px;
+   position: relative;
+   background-image: url("images/swirl.png");
+   background-repeat: no-repeat;
+   background-position: center;
+   width: 1570px;
+   height: 1000px;
+   float: left;
+  width: 100%;
+
+}
+
+
+ .burger
+          { background-color:#ff914c;
+width: 400px;
+text-align: center;
+color: white;
+font-family:'blenny', sans-serif;
+
+}
+
+ .ice{ background-color: white;
+   width:400px;
+   color:#ff914c;
+   font-family: 'Roboto', sans-serif;
+padding: 4px;
+
+
+ }
+
+ .featureditems{
+ color: #ff914c;
+font-family:'blenny', sans-serif;
+margin-top: -480px;
+margin-bottom: ;
+margin-left:    930px;
+
+
+
+ }
+ .treats {
+   margin-top:100px;
+   margin-left:740px;
+margin-bottom: 75px
+
+
+ }
+
+
+
+ .treat{
+   margin-top:-200px;
+   margin-left:900px;
+
+
+
+ }
+
+ .treaty{
+   margin-top:-124px;
+   margin-left:1060px;
+
+
+ }
+
+ .treatie{
+   margin-top:-122px;
+   margin-left:1220px;
+   float: left;
+  width: 20%;
+
+
+ }
+
+}
+
+.logo{
+
+  margin-left:1000px;
+float: right;
+}
+
+ ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   background-color: #ff914c;
+  font-family:'Roboto', sans-serif;
+  width: 400px;
+
+ }
+
+ li {
+   float: left;
+
+ }
+
+ li a {
+   display: block;
+   color: white;
+   text-align:center;
+   padding:14px 16px;
+   text-decoration: none;
+
+ }
+ li a:hover {
+   background-color: #ffd5c4;
+ }
+ .dropdown {
+   position: relative;
+   display: inline-block;
+ }
+
+   .dropdown-content a {
+     color: black;
+     padding: 12px 16px;
+     text-decoration: none;
+     display: block;
+   }
+
+   .dropdown-content a:hover {background-color: #ff914c}
+
+   .dropdown:hover .dropdown-content {
+     display: block ;
+   }
+   .dropdown:hover .dropbtn {
+     background-color: #ff914c;
+   }
+   form {
+     background-color: #ff914c;
+     width: 800px;
+     height: 44px;
+     border-radius: 5px;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     opacity: 0.7;
+margin-left: 600px
+   }
+
+   input {
+  all: unset;
+  font: 16px system-ui;
+  color: #fff6ff;
+  height: 100%;
+  width: 100%;
+  padding: 6px 10px;
+}
+
+::placeholder {
+  color: #fff6ff;
+  opacity: 1;
+}
+button {
+  all: unset;
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+}
+
+svg {
+  color: #fff;
+  fill: currentColor;
+  width: 24px;
+  height: 24px;
+  padding: 10px;
+}
+
+
+
+</style>
+
+</head>
+
+<body>
+  <div class="container">
+
+    <ul>
+    <div class="dropdown">
+
+    <li><a href="location.html" target="_blank">Location</a></li>
+
+      <li><a href="pricing.html" target="_blank">Pricing</a></li>
+      <li><a href="toprated.html" target="_blank">Top Rated</a></li>
+      <li><a href="specials.html" target="_blank">Specials</a></li>
+    </div>
+  </ul>
+  <img src="images/coldcupslogo.png" height="200px" class="logo">
+
+  <!-- search bar-->
+  <form id="form" role="search">
+  <input type="search" id="query" name="q"
+   placeholder="Search..."
+   aria-label="Search through site content">
+  <button><svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941
+    36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706
+    312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091
+     218.455 218.455 218.455s218.455-97.091 218.455-218.455c
+    0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg></button>
+</form>
+<script>
+const f = document.getElementById('form');
+const q = document.getElementById('query');
+const google = 'https://www.google.com/search?q=site%3A+';
+const site = 'example.com';
+
+function submitted(event) {
+  event.preventDefault();
+  const url = google + site + '+' + q.value;
+  const win = window.open(url, '_blank');
+  win.focus();
+}
+
+f.addEventListener('submit', submitted);
+</script>
+
+  <div class="burger"><h1>Store Spotlight</h1></div>
+
+    <div><img src="images/brusters.jpg" width="400px" height="400px" alt="Brusters Icecream shop"></div>
+  <div class="ice"><p>Bruster’s is at the top of our list this week due to it’s phenomenal white chocolate cherry Truffle Icecream.
+     Stop by Brusters today and let us Know what you think! <a href="storepage.html"> Click for location details.</p></div>
+
+  <div class="featureditems"><h1>Featured Items</h1></div>
+  <div class="treats"><a href="storepage.html"><img src="images/watericebox.png" alt="featured item water ice"></a></div>
+  <div class="treat"><a href="storepage.html"><img src="images/softserve.png" alt= "featured item soft serve Icecream"></a></div>
+  <div class="treaty"><a href="storepage.html"><img src="images/slushie.png" alt="featured item red slushie"></a></div>
+  <div class="treatie"><a href="storepage.html"><img src="images/rbfloat.png" alt="Featured item Rootbeer Float"></a></div>
+</div>
+
+
+
+</body>
+</html>
